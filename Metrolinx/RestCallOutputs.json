@@ -1,0 +1,3489 @@
+//https://www.metaweather.com/api/location/search/?query=Toronto
+[{
+  title: "Toronto",
+  location_type: "City",
+  woeid: 4118,
+  latt_long: "43.648560,-79.385368"
+}]
+///////////////////////////////////////////////////
+//https://www.metaweather.com/api/location/4118
+{
+  consolidated_weather: [
+  {
+  id: 5639083103617024,
+  weather_state_name: "Heavy Cloud",
+  weather_state_abbr: "hc",
+  wind_direction_compass: "ENE",
+  created: "2018-02-22T23:50:24.647940Z",
+  applicable_date: "2018-02-22",
+  min_temp: -2.17,
+  max_temp: 1.86,
+  the_temp: 1.355,
+  wind_speed: 7.195389481571621,
+  wind_direction: 75.67763739019792,
+  air_pressure: 1036.1599999999999,
+  humidity: 74,
+  visibility: 14.021551638431559,
+  predictability: 71
+  },
+  {
+  id: 5477203907182592,
+  weather_state_name: "Light Rain",
+  weather_state_abbr: "lr",
+  wind_direction_compass: "SE",
+  created: "2018-02-22T23:50:27.587910Z",
+  applicable_date: "2018-02-23",
+  min_temp: 0.19666666666666668,
+  max_temp: 6.114,
+  the_temp: 5.8149999999999995,
+  wind_speed: 7.6647133320893985,
+  wind_direction: 124.50615870995152,
+  air_pressure: 1016.7850000000001,
+  humidity: 93,
+  visibility: 4.91784230096238,
+  predictability: 75
+  },
+  {
+  id: 5427481540558848,
+  weather_state_name: "Heavy Cloud",
+  weather_state_abbr: "hc",
+  wind_direction_compass: "NNE",
+  created: "2018-02-22T23:50:30.252420Z",
+  applicable_date: "2018-02-24",
+  min_temp: 1.3266666666666667,
+  max_temp: 3.8600000000000003,
+  the_temp: 4.11,
+  wind_speed: 4.898989899187147,
+  wind_direction: 21.641602027188053,
+  air_pressure: 1020.405,
+  humidity: 78,
+  visibility: 13.81401366022429,
+  predictability: 71
+  },
+  {
+  id: 4937665283620864,
+  weather_state_name: "Hail",
+  weather_state_abbr: "h",
+  wind_direction_compass: "S",
+  created: "2018-02-22T23:50:33.830900Z",
+  applicable_date: "2018-02-25",
+  min_temp: -0.29800000000000004,
+  max_temp: 9.368,
+  the_temp: 6.739999999999999,
+  wind_speed: 13.508773952996103,
+  wind_direction: 186.41695834183446,
+  air_pressure: 1003.24,
+  humidity: 77,
+  visibility: 11.154234271852381,
+  predictability: 82
+  },
+  {
+  id: 5670552865865728,
+  weather_state_name: "Clear",
+  weather_state_abbr: "c",
+  wind_direction_compass: "WSW",
+  created: "2018-02-22T23:50:35.949280Z",
+  applicable_date: "2018-02-26",
+  min_temp: -2.1066666666666665,
+  max_temp: 6.712000000000001,
+  the_temp: 6.21,
+  wind_speed: 9.822296096950609,
+  wind_direction: 254.48444765997777,
+  air_pressure: 1017.6700000000001,
+  humidity: 58,
+  visibility: 17.92531615366261,
+  predictability: 68
+  },
+  {
+  id: 5768728167841792,
+  weather_state_name: "Heavy Cloud",
+  weather_state_abbr: "hc",
+  wind_direction_compass: "SSW",
+  created: "2018-02-22T23:50:39.326750Z",
+  applicable_date: "2018-02-27",
+  min_temp: -0.26,
+  max_temp: 8.136,
+  the_temp: 1.56,
+  wind_speed: 9.971168873777142,
+  wind_direction: 213.4694653654758,
+  air_pressure: 1005.38,
+  humidity: 60,
+  visibility: null,
+  predictability: 71
+  }
+  ],
+  time: "2018-02-22T21:11:49.278620-05:00",
+  sun_rise: "2018-02-22T07:05:26.577753-05:00",
+  sun_set: "2018-02-22T17:57:11.321466-05:00",
+  timezone_name: "LMT",
+  parent: {
+  title: "Canada",
+  location_type: "Country",
+  woeid: 23424775,
+  latt_long: "56.954681,-98.308968"
+  },
+  sources: [
+  {
+  title: "BBC",
+  slug: "bbc",
+  url: "http://www.bbc.co.uk/weather/",
+  crawl_rate: 180
+  },
+  {
+  title: "Forecast.io",
+  slug: "forecast-io",
+  url: "http://forecast.io/",
+  crawl_rate: 480
+  },
+  {
+  title: "HAMweather",
+  slug: "hamweather",
+  url: "http://www.hamweather.com/",
+  crawl_rate: 360
+  },
+  {
+  title: "Met Office",
+  slug: "met-office",
+  url: "http://www.metoffice.gov.uk/",
+  crawl_rate: 180
+  },
+  {
+  title: "OpenWeatherMap",
+  slug: "openweathermap",
+  url: "http://openweathermap.org/",
+  crawl_rate: 360
+  },
+  {
+  title: "Weather Underground",
+  slug: "wunderground",
+  url: "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+  crawl_rate: 720
+  },
+  {
+  title: "World Weather Online",
+  slug: "world-weather-online",
+  url: "http://www.worldweatheronline.com/",
+  crawl_rate: 360
+  },
+  {
+  title: "Yahoo",
+  slug: "yahoo",
+  url: "http://weather.yahoo.com/",
+  crawl_rate: 180
+  }
+  ],
+  title: "Toronto",
+  location_type: "City",
+  woeid: 4118,
+  latt_long: "43.648560,-79.385368",
+  timezone: "America/Toronto"
+  }
+
+
+// http://musicbrainz.org/ws/2/recording?query=artist:%22Queen%22%20and%20type:%22album%22&fmt=json
+
+  {
+  created: "2018-02-11T18:23:17.984Z",
+  count: 9522713,
+  offset: 0,
+  recordings: [{
+      id: "c2e919f7-ecb9-4fdf-9162-3c26d0127fa0",
+      score: "100",
+      title: "Son and Daughter",
+      length: 203000,
+      video: null,
+      artist - credit: [],
+      releases: [{
+          id: "bb19abaf-80b3-4a3e-846d-5f12b12af827",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1994",
+          country: "NL",
+          release - events: [{
+            date: "1994",
+            area: {
+              id: "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+              name: "Netherlands",
+              sort - name: "Netherlands",
+              iso - 3166 - 1 - codes: [
+                "NL"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "3a26455e-2660-30dc-a652-6a2b40f1fbe5",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "1783da6a-9315-3602-a488-1738eb733a0f",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1973-09-04",
+          country: "US",
+          release - events: [{
+            date: "1973-09-04",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "12"
+            Vinyl ",
+            track: [{
+              id: "69400499-a772-3516-8f03-f81c7caba8aa",
+              number: "B4",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "c867a4ef-b0a3-3df7-a71a-119bf40eab00",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1998",
+          country: "US",
+          release - events: [{
+            date: "1998",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "6ecb9b0d-1992-3621-a412-32a60f027880",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "2cc3af3f-1d10-3ad7-af04-37b284c98899",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1994-04-05",
+          country: "GB",
+          release - events: [{
+            date: "1994-04-05",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "597e0659-3496-3b7b-801d-b617642c3c58",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "c20bf21b-16cd-4e10-8ce9-2446c8197b9d",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1991-06-17",
+          country: "US",
+          release - events: [{
+            date: "1991-06-17",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 13,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "5d4c987e-a8bd-3a6e-8634-1eea7d400509",
+              number: "8",
+              title: "Son and Daughter",
+              length: 201026
+            }],
+            track - count: 13,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "81ae60d4-5b75-38df-903a-db2cfa51c2c6",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1973-07-13",
+          country: "GB",
+          release - events: [{
+            date: "1973-07-13",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "12"
+            Vinyl ",
+            track: [{
+              id: "5d873084-c6d9-39cd-a36e-502f4cdbe8f6",
+              number: "B4",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "39220d0b-2961-33c9-b777-d7af0aa80bee",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1986-12",
+          country: "GB",
+          release - events: [{
+            date: "1986-12",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "fd5f51ea-0f2a-3e0c-a180-ff3899c83359",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "bdfde30f-4598-42fb-8cd1-eaf0a9de5374",
+          title: "The Crown Jewels: A 25th Anniversary Celebration",
+          status: "Official",
+          release - group: {
+            id: "c1e2b241-6afd-36a3-a796-297f8142304a",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "1998-11-24",
+          country: "US",
+          release - events: [{
+            date: "1998-11-24",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 90,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "6886824c-38d6-349d-9dee-7db0397be890",
+              number: "8",
+              title: "Son & Daughter",
+              length: 202000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "d3e628a4-4958-4a8c-8f7e-e8a5e873ec50",
+          title: "The Singles Collection, Volume 1",
+          status: "Official",
+          release - group: {
+            id: "852fd082-c253-3ebc-bf6f-ecf58f946b48",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2008-12-01",
+          country: "XE",
+          release - events: [{
+            date: "2008-12-01",
+            area: {
+              id: "89a675c2-3e37-3518-b83c-418bad59a85a",
+              name: "Europe",
+              sort - name: "Europe",
+              iso - 3166 - 1 - codes: [
+                "XE"
+              ]
+            }
+          }],
+          track - count: 28,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "87f0aff7-6a52-3ebf-912b-b9651f19d5f5",
+              number: "2",
+              title: "Son & Daughter",
+              length: 200600
+            }],
+            track - count: 2,
+            track - offset: 1
+          }]
+        },
+        {
+          id: "4ecf1d5b-9c79-42fa-afc8-38d9f40db725",
+          title: "Keep Yourself Alive",
+          status: "Official",
+          release - group: {
+            id: "05857468-226b-4066-b3e3-5ab5c0c9cd26",
+            primary - type: "Single"
+          },
+          date: "1973-07",
+          country: "PT",
+          release - events: [{
+            date: "1973-07",
+            area: {
+              id: "781b0c54-3d54-362d-a941-8a617def4992",
+              name: "Portugal",
+              sort - name: "Portugal",
+              iso - 3166 - 1 - codes: [
+                "PT"
+              ]
+            }
+          }],
+          track - count: 2,
+          media: [{
+            position: 1,
+            format: "Vinyl",
+            track: [{
+              id: "9cb84ddf-3afd-31e0-80cb-6f79fbbcd42b",
+              number: "2",
+              title: "Son and Daughter",
+              length: 200600
+            }],
+            track - count: 2,
+            track - offset: 1
+          }]
+        },
+        {
+          id: "a9d8278d-12eb-3acd-b4e1-fd041eb43916",
+          title: "Keep Yourself Alive",
+          status: "Official",
+          release - group: {
+            id: "05857468-226b-4066-b3e3-5ab5c0c9cd26",
+            primary - type: "Single"
+          },
+          date: "2008-12-03",
+          country: "FI",
+          release - events: [{
+            date: "2008-12-03",
+            area: {
+              id: "6a264f94-6ff1-30b1-9a81-41f7bfabd616",
+              name: "Finland",
+              sort - name: "Finland",
+              iso - 3166 - 1 - codes: [
+                "FI"
+              ]
+            }
+          }],
+          track - count: 2,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "74b175b2-ddd1-3634-b5ba-4f5501bdd28e",
+              number: "2",
+              title: "Son and Daughter",
+              length: 200600
+            }],
+            track - count: 2,
+            track - offset: 1
+          }]
+        },
+        {
+          id: "db43bdd2-05e5-3f5d-afe4-cc7763ba854e",
+          title: "Keep Yourself Alive",
+          status: "Official",
+          release - group: {
+            id: "05857468-226b-4066-b3e3-5ab5c0c9cd26",
+            primary - type: "Single"
+          },
+          date: "1973",
+          country: "GB",
+          release - events: [{
+            date: "1973",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 2,
+          media: [{
+            position: 1,
+            format: "7"
+            Vinyl ",
+            track: [{
+              id: "d7ef2eee-ebca-3bc3-a2f5-3f1b6fad8394",
+              number: "B",
+              title: "Son and Daughter",
+              length: 200600
+            }],
+            track - count: 2,
+            track - offset: 1
+          }]
+        },
+        {
+          id: "5575df00-ddaf-39c7-a606-6789dc3fb1f2",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2011-03-14",
+          country: "GB",
+          release - events: [{
+            date: "2011-03-14",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 16,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "d63b1369-6bbe-374d-a445-3ead85345615",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "c4cbb5b1-2df6-4170-acba-076681dc1d26",
+          title: "Queen",
+          status: "",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          track - count: 19,
+          media: [{
+            position: 1,
+            format: "",
+            track: [{
+              id: "77ea158f-36ae-36b2-8884-02c909dc533c",
+              number: "7",
+              title: "Son and Daughter",
+              length: 202826
+            }],
+            track - count: 19,
+            track - offset: 6
+          }]
+        },
+        {
+          id: "7d2a0e90-c34f-42cf-bf90-3d3f47d45ac1",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2011-05-17",
+          country: "US",
+          release - events: [{
+            date: "2011-05-17",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 16,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "00ddf339-a545-33d3-86d6-ac4c9aad5c4a",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "18cfda7b-0f11-4c74-8b6b-136665697319",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2011-03-14",
+          country: "XE",
+          release - events: [{
+            date: "2011-03-14",
+            area: {
+              id: "89a675c2-3e37-3518-b83c-418bad59a85a",
+              name: "Europe",
+              sort - name: "Europe",
+              iso - 3166 - 1 - codes: [
+                "XE"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "b05b29fd-729a-3daa-9369-ee80cfe7258a",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203160
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "4b96fd8d-d1e3-414b-8635-67df076498aa",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1982-08",
+          country: "GB",
+          release - events: [{
+            date: "1982-08",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "12"
+            Vinyl ",
+            track: [{
+              id: "c4fe6ede-7800-39f9-abc7-6a14ed4f0ad8",
+              number: "B4",
+              title: "Son and Daughter",
+              length: 0
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "18db7ddc-b41e-4e84-8506-6ee56ac2e77d",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2011-12-14",
+          country: "JP",
+          release - events: [{
+            date: "2011-12-14",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "SHM-SACD",
+            track: [{
+              id: "81b2603b-0cb4-320d-a0d6-ad3306bd545c",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "f467c010-46e8-4f4f-9759-fc462680ec0f",
+          title: "Queen 40",
+          status: "Official",
+          release - group: {
+            id: "78d73193-8a9e-4270-9c45-9f19ee4e127b",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-05-17",
+          country: "XW",
+          release - events: [{
+            date: "2011-05-17",
+            area: {
+              id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              name: "[Worldwide]",
+              sort - name: "[Worldwide]",
+              iso - 3166 - 1 - codes: [
+                "XW"
+              ]
+            }
+          }],
+          track - count: 83,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "57a800b2-02fa-411c-bbc5-593c99dbec38",
+              number: "8",
+              title: "Son and Daughter",
+              length: 200000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "d22e9bf9-59e2-45c0-9626-640f22141383",
+          title: "Queen 40",
+          status: "Official",
+          release - group: {
+            id: "78d73193-8a9e-4270-9c45-9f19ee4e127b",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-05-17",
+          country: "US",
+          release - events: [{
+            date: "2011-05-17",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 83,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "db245251-462a-4a08-9dbb-fc19a147f909",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "47a61826-8264-46e1-a1ef-e854618195c5",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1973",
+          country: "US",
+          release - events: [{
+            date: "1973",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "Cassette",
+            track: [{
+              id: "59e35c41-8af0-4bea-b506-044ffcf78416",
+              number: "B4",
+              title: "Son and Daughter",
+              length: 200826
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "79832448-d108-43b0-848b-6586bf5c9c9f",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "1998",
+          country: "JP",
+          release - events: [{
+            date: "1998",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "2658f293-041b-4c0e-ae45-7a7bb2f04ab9",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "19b64601-f17b-4caa-a9e0-f3a894ee5f0c",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2011-03-16",
+          country: "JP",
+          release - events: [{
+            date: "2011-03-16",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 16,
+          media: [{
+            position: 1,
+            format: "SHM-CD",
+            track: [{
+              id: "68c41603-437f-4271-917e-cf955a576083",
+              number: "8",
+              title: "Son And Daughter",
+              length: 203000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "32c75db9-d03a-445b-815b-d3edab9b218d",
+          title: "Studio Collection",
+          status: "Official",
+          release - group: {
+            id: "42046267-c122-4838-a51f-a72636e7edaf",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2015-09-25",
+          country: "XE",
+          release - events: [{
+            date: "2015-09-25",
+            area: {
+              id: "89a675c2-3e37-3518-b83c-418bad59a85a",
+              name: "Europe",
+              sort - name: "Europe",
+              iso - 3166 - 1 - codes: [
+                "XE"
+              ]
+            }
+          }],
+          track - count: 171,
+          media: [{
+            position: 1,
+            format: "12"
+            Vinyl ",
+            track: [{
+              id: "f75ffdff-8a70-4463-a91d-0b3dec68070a",
+              number: "B4",
+              title: "Son and Daughter",
+              length: 0
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "918c7b6c-27f5-4a29-8000-3c7ad7d1480c",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2014-10-27",
+          country: "US",
+          release - events: [{
+            date: "2014-10-27",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "ea0f4fc9-6f0c-4418-bafe-9b037dd2bb70",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203160
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "9e8809e4-3cf2-44d9-aeeb-b267594daa29",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2014-11-04",
+          country: "US",
+          release - events: [{
+            date: "2014-11-04",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 16,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "af24d7a1-871a-4f94-a91e-785f1e8ce54e",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "242e152b-36fc-4c90-9296-d21397e48266",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2014",
+          country: "XW",
+          release - events: [{
+            date: "2014",
+            area: {
+              id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              name: "[Worldwide]",
+              sort - name: "[Worldwide]",
+              iso - 3166 - 1 - codes: [
+                "XW"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "08410b32-bc10-440e-8c6f-480717eab9f5",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203160
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "3b68914d-f9c7-4fdb-a86d-6a397e7d34a3",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2014",
+          country: "XW",
+          release - events: [{
+            date: "2014",
+            area: {
+              id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              name: "[Worldwide]",
+              sort - name: "[Worldwide]",
+              iso - 3166 - 1 - codes: [
+                "XW"
+              ]
+            }
+          }],
+          track - count: 19,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "3dc7a9a0-e6dc-41ca-bf69-e532a863e41a",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "26d5f6ad-d19b-4e06-81df-57a832b22df3",
+          title: "Queen / The Great Pretender",
+          status: "Bootleg",
+          artist - credit: [{
+              joinphrase: " / ",
+              artist: {
+                id: "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+                name: "Queen",
+                sort - name: "Queen",
+                disambiguation: "UK rock group"
+              }
+            },
+            {
+              artist: {
+                id: "022589ac-7177-460d-a178-9976cf70e29f",
+                name: "Freddie Mercury",
+                sort - name: "Mercury, Freddie"
+              }
+            }
+          ],
+          release - group: {
+            id: "cdd19443-143d-4689-9afb-802f0b6dcca6",
+            primary - type: "Album"
+          },
+          date: "2000",
+          country: "RU",
+          release - events: [{
+            date: "2000",
+            area: {
+              id: "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+              name: "Russia",
+              sort - name: "Russia",
+              iso - 3166 - 1 - codes: [
+                "RU"
+              ]
+            }
+          }],
+          track - count: 21,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "1efeb398-859f-4a95-ac5a-6982a1705a81",
+              number: "8",
+              title: "Son and Daughter",
+              length: 201893
+            }],
+            track - count: 21,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "73189176-c640-40fa-8751-7fe6598c1299",
+          title: "The Orb",
+          status: "Official",
+          release - group: {
+            id: "aed10632-8b62-4aed-b4be-af0a1bf77072",
+            primary - type: "Other",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-11-28",
+          country: "GB",
+          release - events: [{
+            date: "2011-11-28",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 172,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "0abba227-a187-4947-a24d-ba9eaf919a83",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203400
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "2252ac32-2a74-4c08-ba2e-7aabc09dde38",
+          title: "Queen",
+          status: "Official",
+          release - group: {
+            id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+            primary - type: "Album"
+          },
+          date: "2014-07-30",
+          country: "JP",
+          release - events: [{
+            date: "2014-07-30",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 10,
+          media: [{
+            position: 1,
+            format: "SHM-CD",
+            track: [{
+              id: "2fd7e2f6-94b5-4a0c-9be7-b57f154f8dce",
+              number: "8",
+              title: "Son and Daughter",
+              length: 199000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        },
+        {
+          id: "4b29a808-7ce1-4966-9721-d489d622596a",
+          title: "Keep Yourself Alive",
+          status: "Official",
+          release - group: {
+            id: "05857468-226b-4066-b3e3-5ab5c0c9cd26",
+            primary - type: "Single"
+          },
+          date: "2011-04-16",
+          country: "US",
+          release - events: [{
+            date: "2011-04-16",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 2,
+          media: [{
+            position: 1,
+            format: "7"
+            Vinyl ",
+            track: [{
+              id: "ce11c94b-d728-4c5b-9b4d-8d6de137eb79",
+              number: "B",
+              title: "Son and Daughter",
+              length: 198000
+            }],
+            track - count: 2,
+            track - offset: 1
+          }]
+        },
+        {
+          id: "a29ec6e9-df95-49d2-8c9e-a87a00d62bdd",
+          title: "Miniatures: Volume 1",
+          status: "Official",
+          release - group: {
+            id: "75c6f1b1-7d91-4054-8fd4-f47e753ed3f0",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "1998",
+          country: "JP",
+          release - events: [{
+            date: "1998",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 46,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "f5466360-8b4e-4f65-9132-99827e2c740b",
+              number: "8",
+              title: "Son and Daughter",
+              length: 203000
+            }],
+            track - count: 10,
+            track - offset: 7
+          }]
+        }
+      ],
+      isrcs: [],
+      tags: []
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      id: "94e6c21d-0480-45e0-87b1-5a1ef51786a1",
+      score: "94",
+      title: "Marriage of Dale and Ming (and Flash Approaching)",
+      length: 124840,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+          name: "Queen",
+          sort - name: "Queen",
+          disambiguation: "UK rock group",
+          aliases: [{
+            sort - name: "Queen + Adam Lambert",
+            name: "Queen + Adam Lambert",
+            locale: null,
+            type: null,
+            primary: null,
+            begin - date: "2011",
+            end - date: null
+          }]
+        }
+      }],
+      releases: [{
+          id: "e96c6405-1bcc-4356-b9b4-33f0e62d179b",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "1991-09-03",
+          country: "US",
+          release - events: [{
+            date: "1991-09-03",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 19,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "58fc9e90-b106-3681-9465-80ebadfaf333",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124866
+            }],
+            track - count: 19,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "be20e9fb-7cfb-4526-b4e9-8e7764cef907",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "1980-12-08",
+          country: "GB",
+          release - events: [{
+            date: "1980-12-08",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "12"
+            Vinyl ",
+            track: [{
+              id: "5f1ef013-33e2-3b20-a69d-ac6b21c6aa41",
+              number: "B7",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 125000
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "13278e44-fdac-3df9-917f-4c124006230b",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "1994-04-05",
+          country: "GB",
+          release - events: [{
+            date: "1994-04-05",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "4577086c-3eb9-3489-9be2-bcf9dd899b41",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124840
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "358a26e2-459c-31a4-871c-c7de90d7e310",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2004-07-12",
+          country: "GB",
+          release - events: [{
+            date: "2004-07-12",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "",
+            track: [{
+              id: "691f43cb-7a83-3b5d-a791-00cfe3299b48",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124840
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "59d12ea8-d88e-3c6b-84db-8b53b6657f7d",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2004",
+          country: "JP",
+          release - events: [{
+            date: "2004",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "45de5b3d-1085-3b54-a774-2d53d3eb25f7",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124840
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "c8a6c0d4-1fe4-4940-a0df-cfb112f9800c",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2011-06-27",
+          country: "GB",
+          release - events: [{
+            date: "2011-06-27",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 24,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "88bc9417-34b4-34ce-8b40-b5921191fbd2",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124000
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "6fa385cf-1acb-41b6-b5c5-35ae04987c88",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2011-09-13",
+          country: "US",
+          release - events: [{
+            date: "2011-09-13",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 24,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "e2cff427-4a32-3bea-a8a1-7c3a88d1ede0",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124280
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "04d0af62-3385-4407-8c88-f1e336d66daf",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "1986",
+          country: "DE",
+          release - events: [{
+            date: "1986",
+            area: {
+              id: "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              name: "Germany",
+              sort - name: "Germany",
+              iso - 3166 - 1 - codes: [
+                "DE"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "2975be9e-70f5-367d-872a-25f942ee9257",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 125000
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "60c8fde3-677f-4bdc-ae53-79d1fcac0754",
+          title: "Flash Gordon: Original Soundtrack",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2012-02-22",
+          country: "JP",
+          release - events: [{
+            date: "2012-02-22",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "SHM-SACD",
+            track: [{
+              id: "e303f1fb-2fec-396d-8c1c-43efd0ce406b",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124840
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "e1447654-f1fb-4b04-852f-0b1c06cc50a9",
+          title: "Queen 40",
+          status: "Official",
+          release - group: {
+            id: "2f56033b-1f56-4a48-961e-8d5e78721c6f",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-09-13",
+          country: "US",
+          release - events: [{
+            date: "2011-09-13",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 89,
+          media: [{
+            position: 7,
+            format: "CD",
+            track: [{
+              id: "2198ed28-0d8c-4870-a4c4-2a33d474de47",
+              number: "15",
+              title: "Marriage of Dale and Ming (And Flash Approaching)",
+              length: 124280
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "fe5e253f-bfaf-4ec4-b423-7a23bdf76b64",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2011-06-27",
+          country: "XE",
+          release - events: [{
+            date: "2011-06-27",
+            area: {
+              id: "89a675c2-3e37-3518-b83c-418bad59a85a",
+              name: "Europe",
+              sort - name: "Europe",
+              iso - 3166 - 1 - codes: [
+                "XE"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "74410058-95f4-4042-aa81-f70bd4d1667b",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124000
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "3704b459-e6dc-48d0-aa99-a8c90053b078",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2011-06-22",
+          country: "JP",
+          release - events: [{
+            date: "2011-06-22",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 24,
+          media: [{
+            position: 1,
+            format: "SHM-CD",
+            track: [{
+              id: "fff6daed-fb8c-4155-8588-ef3e828307da",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124280
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "32c75db9-d03a-445b-815b-d3edab9b218d",
+          title: "Studio Collection",
+          status: "Official",
+          release - group: {
+            id: "42046267-c122-4838-a51f-a72636e7edaf",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2015-09-25",
+          country: "XE",
+          release - events: [{
+            date: "2015-09-25",
+            area: {
+              id: "89a675c2-3e37-3518-b83c-418bad59a85a",
+              name: "Europe",
+              sort - name: "Europe",
+              iso - 3166 - 1 - codes: [
+                "XE"
+              ]
+            }
+          }],
+          track - count: 171,
+          media: [{
+            position: 9,
+            format: "12"
+            Vinyl ",
+            track: [{
+              id: "14d73432-40a5-44af-8db5-63d8b5d7e1ba",
+              number: "R7",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 125000
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "bfc7dbb1-60bf-4959-9a7b-5eba27f47353",
+          title: "Jazz / Flash Gordon",
+          status: "Bootleg",
+          release - group: {
+            id: "b710c400-0f2e-4685-8dae-973b89605d76",
+            primary - type: "Album"
+          },
+          date: "2000",
+          country: "RU",
+          release - events: [{
+            date: "2000",
+            area: {
+              id: "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+              name: "Russia",
+              sort - name: "Russia",
+              iso - 3166 - 1 - codes: [
+                "RU"
+              ]
+            }
+          }],
+          track - count: 31,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "d76f2025-ce1a-4fdc-a484-a1d62d046f45",
+              number: "28",
+              title: "Marriage of Dale and Ming",
+              length: 124866
+            }],
+            track - count: 31,
+            track - offset: 27
+          }]
+        },
+        {
+          id: "13a153f9-38dc-40c1-a7e0-2403a6fb5943",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "2014",
+          country: "GB",
+          release - events: [{
+            date: "2014",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 27,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "83d0ca2a-b2b2-411a-8b68-5bb2ab9c55de",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124283
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "73189176-c640-40fa-8751-7fe6598c1299",
+          title: "The Orb",
+          status: "Official",
+          release - group: {
+            id: "aed10632-8b62-4aed-b4be-af0a1bf77072",
+            primary - type: "Other",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-11-28",
+          country: "GB",
+          release - events: [{
+            date: "2011-11-28",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 172,
+          media: [{
+            position: 9,
+            format: "Digital Media",
+            track: [{
+              id: "50925de9-e6ad-4131-8374-764c7e1dbec0",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124840
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        },
+        {
+          id: "198fdd38-b86f-4a2c-a7a4-f3d4a19033a4",
+          title: "Flash Gordon",
+          status: "Official",
+          release - group: {
+            id: "70bd9521-c3ea-38c9-9d67-a6a6100bfa48",
+            primary - type: "Album",
+            secondary - types: [
+              "Soundtrack"
+            ]
+          },
+          date: "1994",
+          country: "IT",
+          release - events: [{
+            date: "1994",
+            area: {
+              id: "c6500277-9a3d-349b-bf30-41afdbf42add",
+              name: "Italy",
+              sort - name: "Italy",
+              iso - 3166 - 1 - codes: [
+                "IT"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "4a7229da-c0c5-490e-8758-10a7525348ce",
+              number: "15",
+              title: "Marriage of Dale and Ming (and Flash Approaching)",
+              length: 124840
+            }],
+            track - count: 18,
+            track - offset: 14
+          }]
+        }
+      ],
+      isrcs: [{
+          id: "GBUM71103360"
+        },
+        {
+          id: "USHR10215015"
+        }
+      ],
+      tags: [{
+          count: 3,
+          name: "rock"
+        },
+        {
+          count: 1,
+          name: "soundtrack"
+        },
+        {
+          count: 1,
+          name: "hard rock"
+        },
+        {
+          count: 2,
+          name: "album rock"
+        },
+        {
+          count: 1,
+          name: "arena rock"
+        },
+        {
+          count: 1,
+          name: "soundtracks"
+        },
+        {
+          count: 1,
+          name: "aor classic rock"
+        },
+        {
+          count: 1,
+          name: "pop/rock"
+        },
+        {
+          count: 1,
+          name: "contemporary pop/rock"
+        },
+        {
+          count: 1,
+          name: "stage & screen"
+        }
+      ]
+    },
+    {
+      id: "dff9e73b-0980-466d-8e51-6cb06c9c8a18",
+      score: "93",
+      title: "Liar (John Luongo & Gary Hellman 1991 remix)",
+      length: 386666,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+          name: "Queen",
+          sort - name: "Queen",
+          disambiguation: "UK rock group",
+          aliases: [{
+            sort - name: "Queen + Adam Lambert",
+            name: "Queen + Adam Lambert",
+            locale: null,
+            type: null,
+            primary: null,
+            begin - date: "2011",
+            end - date: null
+          }]
+        }
+      }],
+      releases: [{
+        id: "c20bf21b-16cd-4e10-8ce9-2446c8197b9d",
+        title: "Queen",
+        status: "Official",
+        release - group: {
+          id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+          primary - type: "Album"
+        },
+        date: "1991-06-17",
+        country: "US",
+        release - events: [{
+          date: "1991-06-17",
+          area: {
+            id: "489ce91b-6658-3307-9877-795b68554c98",
+            name: "United States",
+            sort - name: "United States",
+            iso - 3166 - 1 - codes: [
+              "US"
+            ]
+          }
+        }],
+        track - count: 13,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "8bae104a-e19b-306e-bd1c-5c14511cdd0e",
+            number: "13",
+            title: "Liar (John Luongo & Gary Hellman 1991 remix)",
+            length: 386666
+          }],
+          track - count: 13,
+          track - offset: 12
+        }]
+      }],
+      tags: [{
+          count: 1,
+          name: "rock"
+        },
+        {
+          count: 1,
+          name: "prog rock"
+        }
+      ]
+    },
+    {
+      id: "11e2d59a-edd0-4ed2-851d-159b155624c4",
+      score: "93",
+      title: "Dragon Attack (1991 Bonus Remix By R.A.K. and Jack Benson)",
+      length: 262533,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+          name: "Queen",
+          sort - name: "Queen",
+          disambiguation: "UK rock group",
+          aliases: [{
+            sort - name: "Queen + Adam Lambert",
+            name: "Queen + Adam Lambert",
+            locale: null,
+            type: null,
+            primary: null,
+            begin - date: "2011",
+            end - date: null
+          }]
+        }
+      }],
+      releases: [{
+        id: "bdbf925a-f549-4325-a38e-11f3dc68322a",
+        title: "The Game",
+        status: "Official",
+        release - group: {
+          id: "75702ddf-a46c-3cac-bace-0a466eb3c37c",
+          primary - type: "Album"
+        },
+        date: "1991-06-17",
+        country: "US",
+        release - events: [{
+          date: "1991-06-17",
+          area: {
+            id: "489ce91b-6658-3307-9877-795b68554c98",
+            name: "United States",
+            sort - name: "United States",
+            iso - 3166 - 1 - codes: [
+              "US"
+            ]
+          }
+        }],
+        track - count: 11,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "c5789695-e3fe-3289-941e-f1056414e539",
+            number: "11",
+            title: "Dragon Attack (1991 Bonus Remix By R.A.K. and Jack Benson)",
+            length: 262533
+          }],
+          track - count: 11,
+          track - offset: 10
+        }]
+      }]
+    },
+    {
+      id: "f3835283-690c-47fe-9ca8-2cda72188503",
+      score: "93",
+      title: "Son and Daughter (live at the Hammersmith Odeon, 1975)",
+      length: 85000,
+      video: true,
+      artist - credit: [{
+        artist: {
+          id: "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+          name: "Queen",
+          sort - name: "Queen",
+          disambiguation: "UK rock group",
+          aliases: [{
+            sort - name: "Queen + Adam Lambert",
+            name: "Queen + Adam Lambert",
+            locale: null,
+            type: null,
+            primary: null,
+            begin - date: "2011",
+            end - date: null
+          }]
+        }
+      }],
+      releases: [{
+        id: "3b68914d-f9c7-4fdb-a86d-6a397e7d34a3",
+        title: "Queen",
+        status: "Official",
+        release - group: {
+          id: "810068af-2b3c-3e9c-b2ab-68a3f3e3787d",
+          primary - type: "Album"
+        },
+        date: "2014",
+        country: "XW",
+        release - events: [{
+          date: "2014",
+          area: {
+            id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            name: "[Worldwide]",
+            sort - name: "[Worldwide]",
+            iso - 3166 - 1 - codes: [
+              "XW"
+            ]
+          }
+        }],
+        track - count: 19,
+        media: [{
+          position: 2,
+          format: "Digital Media",
+          track: [{
+            id: "047ba448-df29-4bfb-8888-ca49e93145e7",
+            number: "7",
+            title: "Son and Daughter (live at the Hammersmith Odeon, 1975)",
+            length: 85000
+          }],
+          track - count: 9,
+          track - offset: 6
+        }]
+      }],
+      tags: [{
+          count: 1,
+          name: "progressive rock"
+        },
+        {
+          count: 1,
+          name: "hard rock"
+        },
+        {
+          count: 1,
+          name: "glam rock"
+        },
+        {
+          count: 1,
+          name: "art rock"
+        }
+      ]
+    },
+    {
+      id: "a2fbd741-ea64-406f-bbbf-2c49af19aaf5",
+      score: "92",
+      title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+      length: 200000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+          name: "Queen",
+          sort - name: "Queen",
+          disambiguation: "UK rock group",
+          aliases: [{
+            sort - name: "Queen + Adam Lambert",
+            name: "Queen + Adam Lambert",
+            locale: null,
+            type: null,
+            primary: null,
+            begin - date: "2011",
+            end - date: null
+          }]
+        }
+      }],
+      releases: [{
+          id: "f14638e1-fb36-358c-aba2-39b084864b13",
+          title: "A Night at the Opera",
+          status: "Official",
+          release - group: {
+            id: "6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd",
+            primary - type: "Album"
+          },
+          date: "2011-03-14",
+          country: "XE",
+          release - events: [{
+            date: "2011-03-14",
+            area: {
+              id: "89a675c2-3e37-3518-b83c-418bad59a85a",
+              name: "Europe",
+              sort - name: "Europe",
+              iso - 3166 - 1 - codes: [
+                "XE"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 2,
+            format: "CD",
+            track: [{
+              id: "c0a766ca-ec08-3d10-8ada-548f28d3de92",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200000
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "5af1b079-8c45-4172-89cd-e4c23a2fba62",
+          title: "A Night at the Opera",
+          status: "Official",
+          release - group: {
+            id: "6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd",
+            primary - type: "Album"
+          },
+          date: "2011-03-16",
+          country: "JP",
+          release - events: [{
+            date: "2011-03-16",
+            area: {
+              id: "2db42837-c832-3c27-b4a3-08198f75693c",
+              name: "Japan",
+              sort - name: "Japan",
+              iso - 3166 - 1 - codes: [
+                "JP"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 2,
+            format: "SHM-CD",
+            track: [{
+              id: "7745820d-ec18-3b77-abd2-a7cb2ce0271b",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200533
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "f467c010-46e8-4f4f-9759-fc462680ec0f",
+          title: "Queen 40",
+          status: "Official",
+          release - group: {
+            id: "78d73193-8a9e-4270-9c45-9f19ee4e127b",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-05-17",
+          country: "XW",
+          release - events: [{
+            date: "2011-05-17",
+            area: {
+              id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              name: "[Worldwide]",
+              sort - name: "[Worldwide]",
+              iso - 3166 - 1 - codes: [
+                "XW"
+              ]
+            }
+          }],
+          track - count: 83,
+          media: [{
+            position: 8,
+            format: "Digital Media",
+            track: [{
+              id: "ebf3f2fd-ec4f-43d9-b76b-38b7eb38b431",
+              number: "4",
+              title: "I’m in Love With My Car",
+              length: 198000
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "d22e9bf9-59e2-45c0-9626-640f22141383",
+          title: "Queen 40",
+          status: "Official",
+          release - group: {
+            id: "78d73193-8a9e-4270-9c45-9f19ee4e127b",
+            primary - type: "Album",
+            secondary - types: [
+              "Compilation"
+            ]
+          },
+          date: "2011-05-17",
+          country: "US",
+          release - events: [{
+            date: "2011-05-17",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 83,
+          media: [{
+            position: 8,
+            format: "CD",
+            track: [{
+              id: "80d71c84-43e2-4687-96d5-2badf0e3c6aa",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200000
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "883a226f-eb77-423f-85c9-7b90c61db6bb",
+          title: "A Night at the Opera",
+          status: "Official",
+          release - group: {
+            id: "6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd",
+            primary - type: "Album"
+          },
+          date: "2011-05-17",
+          country: "US",
+          release - events: [{
+            date: "2011-05-17",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 2,
+            format: "CD",
+            track: [{
+              id: "3f5c3504-092c-4479-856f-8c6d52a346d6",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200000
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "3dd56cca-6ae0-4b59-9c22-b77e5688e18b",
+          title: "A Night at the Opera",
+          status: "Official",
+          release - group: {
+            id: "6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd",
+            primary - type: "Album"
+          },
+          date: "2014",
+          country: "XW",
+          release - events: [{
+            date: "2014",
+            area: {
+              id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              name: "[Worldwide]",
+              sort - name: "[Worldwide]",
+              iso - 3166 - 1 - codes: [
+                "XW"
+              ]
+            }
+          }],
+          track - count: 21,
+          media: [{
+            position: 2,
+            format: "Digital Media",
+            track: [{
+              id: "81817103-b6c9-4fce-b2be-fbba54b4a68a",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200000
+            }],
+            track - count: 9,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "34b025f6-9b82-4aa0-a386-287acb95d0b6",
+          title: "A Night at the Opera",
+          status: "Official",
+          release - group: {
+            id: "6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd",
+            primary - type: "Album"
+          },
+          date: "2014-11-04",
+          country: "US",
+          release - events: [{
+            date: "2014-11-04",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 2,
+            format: "Digital Media",
+            track: [{
+              id: "14198d82-a1d9-4527-865c-428700eb38a6",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200000
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "42609634-27b3-42fb-8419-4a792cc0dadf",
+          title: "A Night at the Opera",
+          status: "Official",
+          release - group: {
+            id: "6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd",
+            primary - type: "Album"
+          },
+          date: "2011",
+          country: "AR",
+          release - events: [{
+            date: "2011",
+            area: {
+              id: "0df04709-c7d8-3b55-a6ea-f3e5069a947b",
+              name: "Argentina",
+              sort - name: "Argentina",
+              iso - 3166 - 1 - codes: [
+                "AR"
+              ]
+            }
+          }],
+          track - count: 18,
+          media: [{
+            position: 2,
+            format: "CD",
+            track: [{
+              id: "7dd82e19-e11f-4ca3-a215-460de6a7a7f9",
+              number: "4",
+              title: "I’m in Love With My Car (guitar & vocal mix 2011)",
+              length: 200533
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        }
+      ],
+      isrcs: [{
+        id: "GBUM71100987"
+      }],
+      tags: [{
+          count: 1,
+          name: "progressive rock"
+        },
+        {
+          count: 1,
+          name: "hard rock"
+        },
+        {
+          count: 1,
+          name: "glam rock"
+        },
+        {
+          count: 1,
+          name: "art rock"
+        }
+      ]
+    },
+    {
+      id: "7072f1c2-ba83-4511-821b-c3153e27e12d",
+      score: "68",
+      title: "Petals and Razorblades",
+      length: 209533,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "c7d8e75d-ce47-473e-a434-e46b316e4e2f",
+          name: "Bandit Queen",
+          sort - name: "Bandit Queen"
+        }
+      }],
+      releases: [{
+          id: "32718ffb-cd4d-4d20-bd1b-fdeeb2da357d",
+          title: "Hormone Hotel",
+          status: "Official",
+          release - group: {
+            id: "cb53234a-3380-3e69-a0ab-238bace6bd1b",
+            primary - type: "Album"
+          },
+          track - count: 14,
+          media: [{
+            position: 1,
+            format: "",
+            track: [{
+              id: "31726ebb-3851-3bc9-a0e8-7121599b673c",
+              number: "6",
+              title: "Petals and Razorblades",
+              length: 209533
+            }],
+            track - count: 14,
+            track - offset: 5
+          }]
+        },
+        {
+          id: "40a85f3b-bb6f-4f91-8aa8-9956b18e6c53",
+          title: "Hormone Hotel",
+          status: "Official",
+          release - group: {
+            id: "cb53234a-3380-3e69-a0ab-238bace6bd1b",
+            primary - type: "Album"
+          },
+          date: "1995",
+          country: "GB",
+          release - events: [{
+            date: "1995",
+            area: {
+              id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              name: "United Kingdom",
+              sort - name: "United Kingdom",
+              iso - 3166 - 1 - codes: [
+                "GB"
+              ]
+            }
+          }],
+          track - count: 13,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "2866d3ac-ac17-3556-8360-f4c669ae0705",
+              number: "6",
+              title: "Petals and Razorblades",
+              length: 0
+            }],
+            track - count: 13,
+            track - offset: 5
+          }]
+        }
+      ]
+    },
+    {
+      id: "2b24b9c3-22f3-42e4-a0a1-149f2deb4ff2",
+      score: "66",
+      title: "Round and Round",
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "9a86679d-7661-4633-b1b0-76a69922458c",
+          name: "Monica Queen",
+          sort - name: "Queen, Monica"
+        }
+      }],
+      releases: [{
+        id: "77a8a2c4-cf57-44f4-bd61-f08bd52b4674",
+        title: "Return of the Sacred Heart",
+        status: "Official",
+        release - group: {
+          id: "8de66c0f-fa21-31de-b64f-f73f240d7322",
+          primary - type: "Album"
+        },
+        date: "2005-03-14",
+        country: "GB",
+        release - events: [{
+          date: "2005-03-14",
+          area: {
+            id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            name: "United Kingdom",
+            sort - name: "United Kingdom",
+            iso - 3166 - 1 - codes: [
+              "GB"
+            ]
+          }
+        }],
+        track - count: 11,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "13b3f86a-cbab-3f28-9f2b-fb1b910a714f",
+            number: "6",
+            title: "Round and Round",
+            length: 0
+          }],
+          track - count: 11,
+          track - offset: 5
+        }]
+      }]
+    },
+    {
+      id: "4f02b6f3-6c84-497a-8e88-9539c38bfd33",
+      score: "66",
+      title: "Man and The Environment",
+      length: 119733,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "c6303af1-d66e-4e8a-930e-fe1d6ea5b781",
+          name: "Queen Majeeda",
+          sort - name: "Queen Majeeda"
+        }
+      }],
+      releases: [{
+        id: "78119fad-1dff-44db-ba64-211dc3f12574",
+        title: "Conscious",
+        status: "Official",
+        release - group: {
+          id: "69834d01-cd99-3fe1-85d6-edc0c16c1efe",
+          primary - type: "Album"
+        },
+        date: "1993",
+        country: "US",
+        release - events: [{
+          date: "1993",
+          area: {
+            id: "489ce91b-6658-3307-9877-795b68554c98",
+            name: "United States",
+            sort - name: "United States",
+            iso - 3166 - 1 - codes: [
+              "US"
+            ]
+          }
+        }],
+        track - count: 10,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "22520432-fdaa-3751-acc7-6a355e251694",
+            number: "10",
+            title: "Man and The Environment",
+            length: 119733
+          }],
+          track - count: 10,
+          track - offset: 9
+        }]
+      }]
+    },
+    {
+      id: "ccdace43-eb3e-42d8-ac0e-556337c43631",
+      score: "66",
+      title: "Black Woman and Child",
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "8636578b-9eeb-4bc5-844f-6816890d230c",
+          name: "Queen Omega",
+          sort - name: "Queen Omega"
+        }
+      }],
+      releases: [{
+        id: "1dda12db-89fa-42a1-9e3e-4ac38906aea6",
+        title: "Pure Love",
+        status: "Official",
+        release - group: {
+          id: "45e1079b-38c2-3e8b-ba5a-8a036174240c",
+          primary - type: "Album"
+        },
+        date: "2003",
+        country: "GB",
+        release - events: [{
+          date: "2003",
+          area: {
+            id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            name: "United Kingdom",
+            sort - name: "United Kingdom",
+            iso - 3166 - 1 - codes: [
+              "GB"
+            ]
+          }
+        }],
+        track - count: 14,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "dccf9d20-967b-3328-a300-515505ec3fbf",
+            number: "12",
+            title: "Black Woman and Child",
+            length: 0
+          }],
+          track - count: 14,
+          track - offset: 11
+        }]
+      }]
+    },
+    {
+      id: "8216d47b-c7c2-4ef5-acb1-cdb00a9aba36",
+      score: "66",
+      title: "Petals and Razorblades",
+      length: 209000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "c7d8e75d-ce47-473e-a434-e46b316e4e2f",
+          name: "Bandit Queen",
+          sort - name: "Bandit Queen"
+        }
+      }],
+      releases: [{
+        id: "e4d00478-cdfa-47e6-a286-5aa2de60d373",
+        title: "Hormone Hotel",
+        status: "Official",
+        release - group: {
+          id: "cb53234a-3380-3e69-a0ab-238bace6bd1b",
+          primary - type: "Album"
+        },
+        date: "1995",
+        country: "US",
+        release - events: [{
+          date: "1995",
+          area: {
+            id: "489ce91b-6658-3307-9877-795b68554c98",
+            name: "United States",
+            sort - name: "United States",
+            iso - 3166 - 1 - codes: [
+              "US"
+            ]
+          }
+        }],
+        track - count: 12,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "e2cdaa90-8265-35a0-b1ef-38dc56189425",
+            number: "6",
+            title: "Petals and Razorblades",
+            length: 209000
+          }],
+          track - count: 12,
+          track - offset: 5
+        }]
+      }]
+    },
+    {
+      id: "3f606172-94a8-4fbe-a4c8-3bbdb5bc66a6",
+      score: "66",
+      title: "Boxers & Stocking",
+      length: 244000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "bb31abcd-fbd4-4bc1-b460-9fc5352811b1",
+          name: "Queen Ifrica",
+          sort - name: "Queen Ifrica",
+          aliases: [{
+              sort - name: "Queen Africa",
+              name: "Queen Africa",
+              locale: null,
+              type: "Artist name",
+              primary: null,
+              begin - date: null,
+              end - date: null
+            },
+            {
+              sort - name: "Queen Irica",
+              name: "Queen Irica",
+              locale: null,
+              type: "Artist name",
+              primary: null,
+              begin - date: null,
+              end - date: null
+            }
+          ]
+        }
+      }],
+      releases: [{
+        id: "dfef4d3a-8dd4-4c53-8786-88ef7c2bf0c4",
+        title: "Fyah Muma",
+        status: "Official",
+        release - group: {
+          id: "a34deef0-30a7-39f7-8910-a068070f8043",
+          primary - type: "Album"
+        },
+        date: "2006",
+        country: "JM",
+        release - events: [{
+          date: "2006",
+          area: {
+            id: "2dd47a64-91d5-3b13-bc94-80043ed063d7",
+            name: "Jamaica",
+            sort - name: "Jamaica",
+            iso - 3166 - 1 - codes: [
+              "JM"
+            ]
+          }
+        }],
+        track - count: 21,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "d82e4fb3-bd5d-3284-b847-602c55ab6fe7",
+            number: "17",
+            title: "Boxers & Stocking",
+            length: 244000
+          }],
+          track - count: 21,
+          track - offset: 16
+        }]
+      }]
+    },
+    {
+      id: "dc075941-79fc-46f2-8f12-389e663358f6",
+      score: "66",
+      title: "Hypocrites and Parasites",
+      length: 232466,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "8636578b-9eeb-4bc5-844f-6816890d230c",
+          name: "Queen Omega",
+          sort - name: "Queen Omega"
+        }
+      }],
+      releases: [{
+        id: "d5a20ea3-9b14-444d-8295-fc3af062f448",
+        title: "Queen Omega",
+        status: "Official",
+        release - group: {
+          id: "187f159a-38b8-3f98-b05a-34c3e8327009",
+          primary - type: "Album"
+        },
+        track - count: 18,
+        media: [{
+          position: 1,
+          format: "",
+          track: [{
+            id: "2d4693fd-3745-33a9-aef8-2cb048e0480e",
+            number: "2",
+            title: "Hypocrites and Parasites",
+            length: 232466
+          }],
+          track - count: 18,
+          track - offset: 1
+        }]
+      }]
+    },
+    {
+      id: "8eaf7d40-75cb-4eac-b094-10cae9165384",
+      score: "66",
+      title: "Rocking and Popping",
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "8636578b-9eeb-4bc5-844f-6816890d230c",
+          name: "Queen Omega",
+          sort - name: "Queen Omega"
+        }
+      }],
+      releases: [{
+        id: "0e714ee1-3042-43cd-95ed-cc63e32b0ae2",
+        title: "Servant of Jah Army",
+        status: "Official",
+        release - group: {
+          id: "d9c76f65-b413-42be-b898-c873e9ec6065",
+          primary - type: "Album"
+        },
+        country: "GB",
+        release - events: [{
+          area: {
+            id: "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            name: "United Kingdom",
+            sort - name: "United Kingdom",
+            iso - 3166 - 1 - codes: [
+              "GB"
+            ]
+          }
+        }],
+        track - count: 12,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "68f18400-9cba-4a4c-a247-255c05668462",
+            number: "4",
+            title: "Rocking and Popping",
+            length: 0
+          }],
+          track - count: 12,
+          track - offset: 3
+        }]
+      }]
+    },
+    {
+      id: "facb068b-3070-4e53-8ff2-32434678c096",
+      score: "66",
+      title: "Black & Blue (acoustic)",
+      length: 204000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "fca827f9-7bf0-41c2-9f87-d2af0caa20a3",
+          name: "Prom Queen",
+          sort - name: "Prom Queen",
+          disambiguation: "Seattle musician Celene Ramadan"
+        }
+      }],
+      releases: [{
+        id: "722e8714-8add-4cef-8f57-1fec02f9ef66",
+        title: "Night Sound",
+        status: "Official",
+        release - group: {
+          id: "7ba9abfa-82b3-444c-9db1-340a98484f82",
+          primary - type: "Album"
+        },
+        date: "2012-04-24",
+        country: "XW",
+        release - events: [{
+          date: "2012-04-24",
+          area: {
+            id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            name: "[Worldwide]",
+            sort - name: "[Worldwide]",
+            iso - 3166 - 1 - codes: [
+              "XW"
+            ]
+          }
+        }],
+        track - count: 11,
+        media: [{
+          position: 1,
+          format: "Digital Media",
+          track: [{
+            id: "df4efd1d-5dae-4c0b-9d2e-75c51b289bdb",
+            number: "11",
+            title: "Black & Blue (acoustic)",
+            length: 204000
+          }],
+          track - count: 11,
+          track - offset: 10
+        }]
+      }]
+    },
+    {
+      id: "05590509-b159-4a3b-9ed9-afda31cee8da",
+      score: "66",
+      title: "Black & Blue",
+      length: 222000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "fca827f9-7bf0-41c2-9f87-d2af0caa20a3",
+          name: "Prom Queen",
+          sort - name: "Prom Queen",
+          disambiguation: "Seattle musician Celene Ramadan"
+        }
+      }],
+      releases: [{
+        id: "722e8714-8add-4cef-8f57-1fec02f9ef66",
+        title: "Night Sound",
+        status: "Official",
+        release - group: {
+          id: "7ba9abfa-82b3-444c-9db1-340a98484f82",
+          primary - type: "Album"
+        },
+        date: "2012-04-24",
+        country: "XW",
+        release - events: [{
+          date: "2012-04-24",
+          area: {
+            id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            name: "[Worldwide]",
+            sort - name: "[Worldwide]",
+            iso - 3166 - 1 - codes: [
+              "XW"
+            ]
+          }
+        }],
+        track - count: 11,
+        media: [{
+          position: 1,
+          format: "Digital Media",
+          track: [{
+            id: "4d682b50-b74d-4a50-9647-ff30f8a14061",
+            number: "4",
+            title: "Black & Blue",
+            length: 222000
+          }],
+          track - count: 11,
+          track - offset: 3
+        }]
+      }]
+    },
+    {
+      id: "4b53c8ce-9c2e-4c69-8cb9-184f7a6a37b0",
+      score: "66",
+      title: "Charlatans and Soothsayers",
+      length: 263107,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "b2ad538c-23c4-4da9-a760-f2609c729bd3",
+          name: "Rob Queen",
+          sort - name: "Rob Queen"
+        }
+      }],
+      releases: [{
+        id: "5011337f-f2a5-4d67-baf6-dab5a641a423",
+        title: "Hell or High Water",
+        status: "Official",
+        release - group: {
+          id: "86238aa3-2f3c-4779-a891-1bf596faeae5",
+          primary - type: "Album"
+        },
+        date: "2016-03-19",
+        country: "XW",
+        release - events: [{
+          date: "2016-03-19",
+          area: {
+            id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            name: "[Worldwide]",
+            sort - name: "[Worldwide]",
+            iso - 3166 - 1 - codes: [
+              "XW"
+            ]
+          }
+        }],
+        track - count: 10,
+        media: [{
+          position: 1,
+          format: "Digital Media",
+          track: [{
+            id: "026fa2fc-95fd-44a2-a2dc-891224106c9e",
+            number: "5",
+            title: "Charlatans and Soothsayers",
+            length: 263107
+          }],
+          track - count: 10,
+          track - offset: 4
+        }]
+      }]
+    },
+    {
+      id: "dd4e77a7-c772-4708-b4ee-0d28bd00377f",
+      score: "66",
+      title: "Virginia and the Wizard",
+      length: 326640,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "d7f334d7-6355-4317-bfd2-41bf577583cd",
+          name: "Star Queen",
+          sort - name: "Star Queen",
+          disambiguation: "Bulgarian gothic/power metal band"
+        }
+      }],
+      releases: [{
+        id: "1092d9ae-7489-4bee-aad7-57b2f6663131",
+        title: "Your True Self",
+        status: "Official",
+        release - group: {
+          id: "feb75470-f0e7-4ed9-ace9-934b0338c5b3",
+          primary - type: "Album"
+        },
+        date: "2004-07-24",
+        release - events: [{
+          date: "2004-07-24"
+        }],
+        track - count: 11,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "cf3c8257-e584-357c-ae9c-549964d517bf",
+            number: "5",
+            title: "Virginia and the Wizard",
+            length: 326640
+          }],
+          track - count: 11,
+          track - offset: 4
+        }]
+      }]
+    },
+    {
+      id: "bcf4db6c-03d5-4a8b-b4da-df72c9a45ef3",
+      score: "66",
+      title: "To Serve and Protect",
+      length: 247000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "bb31abcd-fbd4-4bc1-b460-9fc5352811b1",
+          name: "Queen Ifrica",
+          sort - name: "Queen Ifrica",
+          aliases: [{
+              sort - name: "Queen Africa",
+              name: "Queen Africa",
+              locale: null,
+              type: "Artist name",
+              primary: null,
+              begin - date: null,
+              end - date: null
+            },
+            {
+              sort - name: "Queen Irica",
+              name: "Queen Irica",
+              locale: null,
+              type: "Artist name",
+              primary: null,
+              begin - date: null,
+              end - date: null
+            }
+          ]
+        }
+      }],
+      releases: [{
+        id: "46265b00-9d7f-48f7-ba33-2fb12d6e1392",
+        title: "Something Old, Something New, Volume 4",
+        status: "Official",
+        artist - credit: [{
+          artist: {
+            id: "89ad4ac3-39f7-470e-963a-56509c546377",
+            name: "Various Artists",
+            sort - name: "Various Artists"
+          }
+        }],
+        release - group: {
+          id: "477e11b4-c449-3fcb-b7f4-ea72095ba44c",
+          primary - type: "Album"
+        },
+        date: "2009-01",
+        country: "US",
+        release - events: [{
+          date: "2009-01",
+          area: {
+            id: "489ce91b-6658-3307-9877-795b68554c98",
+            name: "United States",
+            sort - name: "United States",
+            iso - 3166 - 1 - codes: [
+              "US"
+            ]
+          }
+        }],
+        track - count: 13,
+        media: [{
+          position: 1,
+          format: "CD",
+          track: [{
+            id: "dbe4d602-a177-33f5-97be-31a4b8908e20",
+            number: "1",
+            title: "To Serve and Protect",
+            length: 247000
+          }],
+          track - count: 13,
+          track - offset: 0
+        }]
+      }]
+    },
+    {
+      id: "433c3762-d6ab-48b9-a0fb-3d82d618df08",
+      score: "66",
+      title: "The Vulture and the Creed",
+      length: 518000,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "80581d86-cea6-4f3c-b19b-c0bbd94b1794",
+          name: "Queen Elephantine",
+          sort - name: "Queen Elephantine"
+        }
+      }],
+      releases: [{
+          id: "688c5cf5-0e0f-4fda-930c-a2b7592724c7",
+          title: "Kailash",
+          status: "Official",
+          release - group: {
+            id: "e6cd94cf-9bac-44e0-b70c-5a283ffb6dba",
+            primary - type: "Album"
+          },
+          date: "2009",
+          country: "US",
+          release - events: [{
+            date: "2009",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 7,
+          media: [{
+            position: 1,
+            format: "Cassette",
+            track: [{
+              id: "88d2ba7a-7c65-38b9-aaef-7a3c4cdabd34",
+              number: "4",
+              title: "The Vulture and the Creed",
+              length: 518000
+            }],
+            track - count: 7,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "1e4f850a-6cc1-486e-b40e-9eed3e8136f4",
+          title: "Kailash",
+          status: "Official",
+          release - group: {
+            id: "e6cd94cf-9bac-44e0-b70c-5a283ffb6dba",
+            primary - type: "Album"
+          },
+          date: "2009",
+          country: "US",
+          release - events: [{
+            date: "2009",
+            area: {
+              id: "489ce91b-6658-3307-9877-795b68554c98",
+              name: "United States",
+              sort - name: "United States",
+              iso - 3166 - 1 - codes: [
+                "US"
+              ]
+            }
+          }],
+          track - count: 7,
+          media: [{
+            position: 1,
+            format: "CD",
+            track: [{
+              id: "cc9f5920-e3b9-3bb1-b096-8fbc2f9e66c3",
+              number: "4",
+              title: "The Vulture and the Creed",
+              length: 518000
+            }],
+            track - count: 7,
+            track - offset: 3
+          }]
+        },
+        {
+          id: "57f0a4ac-c597-4529-aa67-4a43fa524676",
+          title: "Kailash",
+          status: "Official",
+          release - group: {
+            id: "e6cd94cf-9bac-44e0-b70c-5a283ffb6dba",
+            primary - type: "Album"
+          },
+          date: "2010-05-01",
+          country: "XW",
+          release - events: [{
+            date: "2010-05-01",
+            area: {
+              id: "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              name: "[Worldwide]",
+              sort - name: "[Worldwide]",
+              iso - 3166 - 1 - codes: [
+                "XW"
+              ]
+            }
+          }],
+          track - count: 6,
+          media: [{
+            position: 1,
+            format: "Digital Media",
+            track: [{
+              id: "fd00db85-43ab-4658-9143-534a7eff0cf6",
+              number: "4",
+              title: "The Vulture and the Creed",
+              length: 518000
+            }],
+            track - count: 6,
+            track - offset: 3
+          }]
+        }
+      ]
+    },
+    {
+      id: "c50975f5-53b9-4d0b-8cf6-61f187cc79d4",
+      score: "65",
+      title: "Tranzania (Hunting Left and Right)",
+      length: 410600,
+      video: null,
+      artist - credit: [{
+        artist: {
+          id: "8a03436b-2120-4d04-9f3b-9e18753ba8b7",
+          name: "Acid Queen",
+          sort - name: "Acid Queen",
+          aliases: [{
+            sort - name: "Acic Queen",
+            name: "Acic Queen",
+            locale: null,
+            type: null,
+            primary: null,
+            begin - date: null,
+            end - date: null
+          }]
+        }
+      }],
+      releases: [{
+        id: "7c17f743-a588-4575-84e4-5086476380f6",
+        title: "Tranzania",
+        status: "Official",
+        release - group: {
+          id: "9a802ade-1e77-3008-b44b-77f8794f545f",
+          primary - type: "Album"
+        },
+        track - count: 10,
+        media: [{
+          position: 1,
+          format: "",
+          track: [{
+            id: "a23b5b57-6e28-38e5-a574-dbbc2e09d788",
+            number: "4",
+            title: "Tranzania (Hunting Left and Right)",
+            length: 410600
+          }],
+          track - count: 10,
+          track - offset: 3
+        }]
+      }]
+    }
+  ]
+  // }

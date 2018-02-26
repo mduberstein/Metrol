@@ -1,0 +1,46 @@
+<!-- <form #metroForm> -->
+<div>
+  <p>
+    album-list works!
+  </p>
+  <!-- <select id="cities" [(ngModel)]="selectedCity" name="selectedCity"> -->
+  <select id="cities" [(ngModel)]="selectedCity" (change)="onCitySelected()">
+    <option *ngFor="let city of cities" [value]="city">
+     {{city}}
+    </option>
+  </select>
+  <div>
+    <span>Selected City: </span>{{selectedCity}}
+  </div>
+  <div>
+    <span>Woeid: </span>{{selectedCityWoeid}}
+  </div>
+  <div>
+    <span>Sun Rise: </span>{{sunRiseString}}
+  </div>
+  <div>
+      <span>Sun Set: </span>{{sunSetString}}
+  </div>
+
+  <select id="cities" [(ngModel)]="selectedCityObject">
+      <option *ngFor="let cityObject of cityObjects" [ngValue]="cityObject">
+       {{cityObject.id}}:{{cityObject.name}}
+      </option>
+    </select>
+    <div>
+      <span>Selected in dropdown City Object name: </span>{{selectedCityObject.name}}
+    </div>
+
+  <ul>
+    <li *ngFor="let cityObject of cityObjects" (click)="onSelect(cityObject)">
+      {{cityObject.id}}:{{cityObject.name}}
+    </li>
+  </ul>
+</div>
+<div>
+  <span>Selected City Object name: </span>{{selectedCityObject.name}}
+</div>
+<div>
+  <button (click)="onClickButton()">Test Click</button>
+</div>
+<!-- </form> -->
