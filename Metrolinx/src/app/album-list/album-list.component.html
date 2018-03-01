@@ -21,7 +21,26 @@
   <div>
       <span>Sun Set: </span>{{sunSetString}}
   </div>
-
+  <div>
+      <button (click)="onClickButton()">Display albums you can play during the day</button>
+  </div>
+  <ul>
+      <li *ngFor ="let album of albums">
+        Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
+      </li>
+  </ul>
+  <div>Albums without duration data</div>
+  <ul>
+      <li *ngFor ="let album of albumsWithoutDuration">
+        Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
+      </li>
+  </ul>
+  <div>Albums beyond playtime</div>
+  <ul>
+      <li *ngFor ="let album of albumsBeyondPlayTime">
+        Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
+      </li>
+  </ul>
   <select id="cities" [(ngModel)]="selectedCityObject">
       <option *ngFor="let cityObject of cityObjects" [ngValue]="cityObject">
        {{cityObject.id}}:{{cityObject.name}}
@@ -30,7 +49,6 @@
     <div>
       <span>Selected in dropdown City Object name: </span>{{selectedCityObject.name}}
     </div>
-
   <ul>
     <li *ngFor="let cityObject of cityObjects" (click)="onSelect(cityObject)">
       {{cityObject.id}}:{{cityObject.name}}
@@ -39,8 +57,5 @@
 </div>
 <div>
   <span>Selected City Object name: </span>{{selectedCityObject.name}}
-</div>
-<div>
-  <button (click)="onClickButton()">Test Click</button>
 </div>
 <!-- </form> -->

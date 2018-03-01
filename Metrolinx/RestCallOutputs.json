@@ -182,11 +182,16 @@
 
 // http://musicbrainz.org/ws/2/recording?query=artist:%22Queen%22%20and%20type:%22album%22&fmt=json
 
-  {
+
+let length = albums.recordings[i].length;
+let track_count = albums.recordings[i].releases[0][]
+
+  let albums = {
   created: "2018-02-11T18:23:17.984Z",
   count: 9522713,
   offset: 0,
-  recordings: [{
+  recordings: [
+    {
       id: "c2e919f7-ecb9-4fdf-9162-3c26d0127fa0",
       score: "100",
       title: "Son and Daughter",
@@ -3487,3 +3492,30 @@
     }
   ]
   // }
+
+  //Output
+  Title: Son and Daughter, duration in minutes: 33.833333333333336
+  Title: You and I, duration in minutes: 34.288833333333336
+  Title: You and I, duration in minutes: 34.833333333333336
+  Title: She Blows Hot and Cold, duration in minutes: 60.108
+  Title: I Was Born to Love You (vocal & piano version), duration in minutes: 56.01611666666667
+  Title: Marriage of Dale and Ming (and Flash Approaching), duration in minutes: 39.532666666666664
+  Title: Son and Daughter (live at the Hammersmith Odeon, 1975), duration in minutes: 26.916666666666668
+  Title: Liar (John Luongo & Gary Hellman 1991 remix), duration in minutes: 83.77763333333333
+  Title: Dragon Attack (1991 Bonus Remix By R.A.K. and Jack Benson), duration in minutes: 48.13105
+  Title: I’m in Love With My Car (guitar & vocal mix 2011), duration in minutes: 60
+  Title: Petals and Razorblades, duration in minutes: 48.89103333333333
+  Title: Virginia and the Wizard, duration in minutes: 59.884
+  Title: Black & Blue, duration in minutes: 40.7
+  Title: Black & Blue (acoustic), duration in minutes: 37.4
+  Title: Rocking and Popping, duration in minutes: NaN
+  Title: Charlatans and Soothsayers, duration in minutes: 43.851166666666664
+  Title: Round and Round, duration in minutes: NaN
+  Title: Man and The Environment, duration in minutes: 19.9555
+  Title: Black Woman and Child, duration in minutes: NaN
+  Title: Boxers & Stocking, duration in minutes: 85.4
+  Title: Petals and Razorblades, duration in minutes: 41.8
+  Title: To Serve and Protect, duration in minutes: 53.516666666666666
+  Title: Hypocrites and Parasites, duration in minutes: 69.7398
+  Title: The Vulture and the Creed, duration in minutes: 60.43333333333333
+  Title: The Mare & The Stallion, duration in minutes: 54.48325

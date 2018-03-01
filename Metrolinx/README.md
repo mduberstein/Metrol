@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
+## How to play:
+1. In your chrome browser add and enable plugin https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog
+2. Clone the repo.
+3. Open in Visual Studio Code - VS Code
+4. In the VS Code terminal run "npm install", then "ng serve" to run the development server.
+5. In Chrome browser navigate to http://localhost:4200
+6. In the top drop down, select City.
+7. Click the button to display list of albums.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
