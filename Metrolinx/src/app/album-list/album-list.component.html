@@ -21,7 +21,7 @@
   <div *ngIf = "sunSetString">
       <span>Sun Set: </span>{{sunSetString}}
   </div>
-  <div>
+  <div *ngIf="selectedCity !== selectACity">
       <button (click)="onClickButton()">Display albums you can play during the day</button>
   </div>
   <div>
@@ -29,23 +29,23 @@
   </div>
   <ul>
       <li *ngFor ="let album of albums">
-        Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
+          Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
   <!-- <div *ngIf="'NaN' !== formattedPlaytimeTotal || 'NaN' !== formattedTimeAvailable"> -->
   <div>
     Footer: Total play time: {{formattedPlaytimeTotal}}. Total available time {{formattedTimeAvailable}}
   </div>
-  <div>Albums without duration data</div>
+  <div *ngIf="albumsWithoutDuration.length > 0">Albums without duration data</div>
   <ul>
       <li *ngFor ="let album of albumsWithoutDuration">
-        Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
+        Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
-  <div>Albums beyond playtime</div>
+  <div *ngIf="albumsBeyondPlayTime.length > 0">Albums beyond playtime</div>
   <ul>
       <li *ngFor ="let album of albumsBeyondPlayTime">
-        Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
+        Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
   <select id="cities" [(ngModel)]="selectedCityObject">

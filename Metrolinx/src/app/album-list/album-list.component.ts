@@ -62,9 +62,22 @@ export class AlbumListComponent implements OnInit {
         return 'NaN';
       }
       let hours:number = Math.floor(msec / 1000 / 3600);
-      let minutes:string = ((msec - hours * 3600 * 1000) / 60000).toFixed(0);
+      let minutes:string = Math.round((msec - hours * 3600 * 1000) / 60000).toFixed(0);
     return `${(hours >=10 ? hours.toString(10) : '0'.concat(hours.toString(10)))}:${minutes}`;
   }
+
+  getAlbumDurationInMinutesAsStringTwoDecimals(album:Album):string{
+    return this.convertMsecTommWithTwoDecimals(album.durationMsec);
+  }
+
+  private convertMsecTommWithTwoDecimals(msec: number):string{
+    if(isNaN(msec)){
+      return 'NaN';
+    }
+    let minutes:string = (msec/60000).toFixed(2);
+    return minutes;
+  }
+
 
   ngOnInit() {
   }
