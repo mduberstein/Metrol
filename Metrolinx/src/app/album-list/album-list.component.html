@@ -24,7 +24,7 @@
   <div *ngIf="selectedCity !== selectACity">
       <button (click)="onClickButton()">Display albums you can play during the day</button>
   </div>
-  <div>
+  <div *ngIf="sunRiseString || sunSetString">
     Header: From {{formattedSunRiseTime}} To {{formattedSunSetTime}}
   </div>
   <ul>
@@ -32,8 +32,7 @@
           Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
-  <!-- <div *ngIf="'NaN' !== formattedPlaytimeTotal || 'NaN' !== formattedTimeAvailable"> -->
-  <div>
+  <div *ngIf="playtimeTotalMsec || timeAvailableMsec">
     Footer: Total play time: {{formattedPlaytimeTotal}}. Total available time {{formattedTimeAvailable}}
   </div>
   <div *ngIf="albumsWithoutDuration.length > 0">Albums without duration data</div>
@@ -42,7 +41,7 @@
         Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
-  <div *ngIf="albumsBeyondPlayTime.length > 0">Albums beyond playtime</div>
+  <div *ngIf="albumsBeyondPlayTime.length > 0">Albums you do not have time to play</div>
   <ul>
       <li *ngFor ="let album of albumsBeyondPlayTime">
         Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks

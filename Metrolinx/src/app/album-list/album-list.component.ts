@@ -9,20 +9,14 @@ import {IAlbum, Album} from '../album.model'
 })
 export class AlbumListComponent implements OnInit {
   readonly selectACity:string = "Select a City";
-  readonly cityObjects: {id:number, name:string}[]  = [
-    {id:-1, name: "Select City"},
-    {id:0, name: "Toronto"},
-    {id:1, name: "Tokyo"},
-    {id:2, name: "London"},
-    {id:3, name: "Sydney"}
-  ];
+
   readonly cities: string[] = [
     this.selectACity,"Toronto", "Tokyo", "London", "Sydney"
   ];
 
-  selectedCityObject:{id:number, name:string};
   selectedCity:string;
-  selectedCityWoeid:number = 0;
+  previouslySelectedCity:string;
+  selectedCityWoeid:number;
   sunRise:Date;
   sunSet:Date;
   sunRiseString:string;
@@ -30,13 +24,15 @@ export class AlbumListComponent implements OnInit {
   albums:Album[]=[];
   albumsWithoutDuration:Album[]=[];
   albumsBeyondPlayTime:Album[]=[];
-  playtimeTotalMsec:number;
-  timeAvailableMsec:number;
+  playtimeTotalMsec:number = null;
+  timeAvailableMsec:number = null;;
 
 
   constructor(public albumRestApi:AlbumRestApiService) {
-    this.selectedCityObject = {id:-1, name:""};
     this.selectedCity = this.selectACity;
+    this.previouslySelectedCity = this.selectedCity;
+    //test code
+    this.selectedCityObject = {id:-1, name:""};
   }
 
   //private readonly timeOptions = {hour: "2-digit", minute: "2-digit"};
@@ -44,11 +40,11 @@ export class AlbumListComponent implements OnInit {
   get formattedSunRiseTime():string {
     //'en-US' is not good for Tokyo, Sydney - testedd
     //return this.sunRise ? this.sunRise.toLocaleTimeString('en-US', this.timeOptions):'';
-    return this.sunRiseString.substr(11, 5);
+    return this.sunRiseString ? this.sunRiseString.substr(11, 5) : null;
   }
   get formattedSunSetTime():string {
     //return this.sunSet ?  this.sunSet.toLocaleTimeString('en-US', this.timeOptions):'' ;
-    return this.sunSetString.substr(11, 5);
+    return this.sunSetString ? this.sunSetString.substr(11, 5) : null;
   }
 
   get formattedPlaytimeTotal():string{
@@ -59,7 +55,7 @@ export class AlbumListComponent implements OnInit {
   }
   private convertMsecTohhmm(msec: number):string{
       if(isNaN(msec)){
-        return 'NaN';
+        return 'unknown';
       }
       let hours:number = Math.floor(msec / 1000 / 3600);
       let minutes:string = Math.round((msec - hours * 3600 * 1000) / 60000).toFixed(0);
@@ -72,7 +68,7 @@ export class AlbumListComponent implements OnInit {
 
   private convertMsecTommWithTwoDecimals(msec: number):string{
     if(isNaN(msec)){
-      return 'NaN';
+      return 'unknown';
     }
     let minutes:string = (msec/60000).toFixed(2);
     return minutes;
@@ -80,10 +76,6 @@ export class AlbumListComponent implements OnInit {
 
 
   ngOnInit() {
-  }
-
-  onSelect(city){
-    this.selectedCityObject = city;
   }
 
   onClickButton(){
@@ -117,7 +109,22 @@ export class AlbumListComponent implements OnInit {
 
   onCitySelected(){
     //this.getCityWoeid();
-    this.getSunRiseSet();
+    if(this.previouslySelectedCity !== this.selectedCity){
+      this.previouslySelectedCity = this.selectedCity;
+      this.selectedCityWoeid = null;
+      this.sunRise = null;
+      this.sunSet = null;
+      this.sunRiseString = null;
+      this.sunSetString = null;
+      this.albums = [];
+      this.albumsBeyondPlayTime = [];
+      this.albumsWithoutDuration = [];
+      this.playtimeTotalMsec = null;
+      this.timeAvailableMsec = null;
+      if(this.selectACity !== this.selectedCity){
+        this.getSunRiseSet();
+      }
+    }
   }
 
   private getCityWoeid(){
@@ -173,4 +180,17 @@ export class AlbumListComponent implements OnInit {
     return album2.trackCount - album1.trackCount;
   }
 
+  //test code
+  selectedCityObject:{id:number, name:string};
+  readonly cityObjects: {id:number, name:string}[]  = [
+    {id:-1, name: "Select City"},
+    {id:0, name: "Toronto"},
+    {id:1, name: "Tokyo"},
+    {id:2, name: "London"},
+    {id:3, name: "Sydney"}
+  ];
+
+  onSelect(city){
+    this.selectedCityObject = city;
+  }
 }
