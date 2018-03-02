@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to play:
 1. In your chrome browser add and enable plugin https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog
+Ensure "Access-Control-Allow-Origin: *" header is configured.
 2. Clone the repo.
 3. Open in Visual Studio Code - VS Code
 4. In the VS Code terminal run "npm install", then "ng serve" to run the development server.

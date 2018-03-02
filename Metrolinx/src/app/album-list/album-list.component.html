@@ -9,26 +9,33 @@
      {{city}}
     </option>
   </select>
-  <div>
+  <div *ngIf="selectedCity !== selectACity">
     <span>Selected City: </span>{{selectedCity}}
   </div>
-  <div>
+  <div *ngIf = "selectedCityWoeid">
     <span>Woeid: </span>{{selectedCityWoeid}}
   </div>
-  <div>
+  <div *ngIf = "sunRiseString">
     <span>Sun Rise: </span>{{sunRiseString}}
   </div>
-  <div>
+  <div *ngIf = "sunSetString">
       <span>Sun Set: </span>{{sunSetString}}
   </div>
   <div>
       <button (click)="onClickButton()">Display albums you can play during the day</button>
+  </div>
+  <div>
+    Header: From {{formattedSunRiseTime}} To {{formattedSunSetTime}}
   </div>
   <ul>
       <li *ngFor ="let album of albums">
         Title: {{album.title}}, duration in minutes: {{album.durationMsec / 60000}}
       </li>
   </ul>
+  <!-- <div *ngIf="'NaN' !== formattedPlaytimeTotal || 'NaN' !== formattedTimeAvailable"> -->
+  <div>
+    Footer: Total play time: {{formattedPlaytimeTotal}}. Total available time {{formattedTimeAvailable}}
+  </div>
   <div>Albums without duration data</div>
   <ul>
       <li *ngFor ="let album of albumsWithoutDuration">
