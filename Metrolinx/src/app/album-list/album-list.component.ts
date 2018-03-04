@@ -8,7 +8,7 @@ import {IAlbum, Album} from '../album.model'
   styleUrls: ['./album-list.component.css']
 })
 export class AlbumListComponent implements OnInit {
-  readonly selectACity:string = "Select a City";
+  readonly selectACity:string = "Select a city";
 
   readonly cities: string[] = [
     this.selectACity,"Toronto", "Tokyo", "London", "Sydney"
@@ -25,7 +25,8 @@ export class AlbumListComponent implements OnInit {
   albumsWithoutDuration:Album[]=[];
   albumsBeyondPlayTime:Album[]=[];
   playtimeTotalMsec:number = null;
-  timeAvailableMsec:number = null;;
+  timeAvailableMsec:number = null;
+  sunRiseSetTimesFetched:boolean = false;
 
 
   constructor(public albumRestApi:AlbumRestApiService) {
@@ -121,6 +122,7 @@ export class AlbumListComponent implements OnInit {
       this.albumsWithoutDuration = [];
       this.playtimeTotalMsec = null;
       this.timeAvailableMsec = null;
+      this.sunRiseSetTimesFetched = false;
       if(this.selectACity !== this.selectedCity){
         this.getSunRiseSet();
       }
@@ -171,6 +173,10 @@ export class AlbumListComponent implements OnInit {
       },
       error: (err) =>{
         console.error(err);
+      },
+      complete: ()=> {
+        this.sunRiseSetTimesFetched = true;
+        console.log(`${this.selectedCity}: sunrise and sunset times fetched`);
       }
 
     });

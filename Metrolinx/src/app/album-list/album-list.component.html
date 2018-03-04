@@ -1,7 +1,7 @@
 <!-- <form #metroForm> -->
 <div>
   <p>
-    album-list works!
+    Select the city you will play in
   </p>
   <!-- <select id="cities" [(ngModel)]="selectedCity" name="selectedCity"> -->
   <select id="cities" [(ngModel)]="selectedCity" (change)="onCitySelected()">
@@ -21,8 +21,8 @@
   <div *ngIf = "sunSetString">
       <span>Sun Set: </span>{{sunSetString}}
   </div>
-  <div *ngIf="selectedCity !== selectACity">
-      <button (click)="onClickButton()">Display albums you can play during the day</button>
+  <div *ngIf="sunRiseSetTimesFetched">
+      <button (click)="onClickButton()">Fetch albums you can play between sunrise and sunset</button>
   </div>
   <div *ngIf="sunRiseString || sunSetString">
     Header: From {{formattedSunRiseTime}} To {{formattedSunSetTime}}
@@ -35,15 +35,15 @@
   <div *ngIf="playtimeTotalMsec || timeAvailableMsec">
     Footer: Total play time: {{formattedPlaytimeTotal}}. Total available time {{formattedTimeAvailable}}
   </div>
-  <div *ngIf="albumsWithoutDuration.length > 0">Albums without duration data</div>
+  <div *ngIf="albumsBeyondPlayTime.length > 0">Albums you can play after sunset</div>
   <ul>
-      <li *ngFor ="let album of albumsWithoutDuration">
+      <li *ngFor ="let album of albumsBeyondPlayTime">
         Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
-  <div *ngIf="albumsBeyondPlayTime.length > 0">Albums you do not have time to play</div>
+  <div *ngIf="albumsWithoutDuration.length > 0">Albums without duration data</div>
   <ul>
-      <li *ngFor ="let album of albumsBeyondPlayTime">
+      <li *ngFor ="let album of albumsWithoutDuration">
         Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
   </ul>
