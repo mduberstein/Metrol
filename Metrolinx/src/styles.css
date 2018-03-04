@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #7BD0D6
+}
+
+#cities {
+    background-color: #7698A5
+}
+
+#selectedCityData {
+    background-color: #53ACA7
+}
+
+.album-section {
+    margin-top: 15px;
+}
+
+#albumsPlayable{
+    background-color: #7171FF
+}
+
+#albumsBeyond{
+    background-color: #7FA752
+}
+
+#albumsWithout{
+    background-color: #FA8585
+}

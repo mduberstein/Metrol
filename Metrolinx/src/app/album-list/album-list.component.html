@@ -1,60 +1,71 @@
 <!-- <form #metroForm> -->
 <div>
-  <p>
-    Select the city you will play in
-  </p>
+  <h2>Select the city you will play in</h2>
   <!-- <select id="cities" [(ngModel)]="selectedCity" name="selectedCity"> -->
   <select id="cities" [(ngModel)]="selectedCity" (change)="onCitySelected()">
     <option *ngFor="let city of cities" [value]="city">
      {{city}}
     </option>
   </select>
-  <div *ngIf="selectedCity !== selectACity">
-    <span>Selected City: </span>{{selectedCity}}
-  </div>
-  <div *ngIf = "selectedCityWoeid">
-    <span>Woeid: </span>{{selectedCityWoeid}}
-  </div>
-  <div *ngIf = "sunRiseString">
-    <span>Sun Rise: </span>{{sunRiseString}}
-  </div>
-  <div *ngIf = "sunSetString">
+  <div id="selectedCityData">
+    <div *ngIf="selectedCity !== selectACity">
+      <span>Selected City: </span>{{selectedCity}}
+    </div>
+    <div *ngIf="selectedCityWoeid">
+      <span>Woeid: </span>{{selectedCityWoeid}}
+    </div>
+    <div *ngIf="sunRiseString">
+      <span>Sun Rise: </span>{{sunRiseString}}
+    </div>
+    <div *ngIf="sunSetString">
       <span>Sun Set: </span>{{sunSetString}}
+    </div>
   </div>
   <div *ngIf="sunRiseSetTimesFetched">
-      <button (click)="onClickButton()">Fetch albums you can play between sunrise and sunset</button>
+    <button type="button" class="btn btn-secondary" (click)="onClickButton()">Fetch Queen albums</button>
   </div>
-  <div *ngIf="sunRiseString || sunSetString">
-    Header: From {{formattedSunRiseTime}} To {{formattedSunSetTime}}
-  </div>
-  <ul>
-      <li *ngFor ="let album of albums">
-          Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
-      </li>
-  </ul>
-  <div *ngIf="playtimeTotalMsec || timeAvailableMsec">
-    Footer: Total play time: {{formattedPlaytimeTotal}}. Total available time {{formattedTimeAvailable}}
-  </div>
-  <div *ngIf="albumsBeyondPlayTime.length > 0">Albums you can play after sunset</div>
-  <ul>
-      <li *ngFor ="let album of albumsBeyondPlayTime">
+
+  <div *ngIf="albums.length > 0" id="albumsPlayable" class="album-section">
+    <h2>Albums you can play between sunrise and sunset</h2>
+    <h5 *ngIf="sunRiseString || sunSetString" class="header">
+      Header: From {{formattedSunRiseTime}} To {{formattedSunSetTime}}
+    </h5>
+    <ul>
+      <li *ngFor="let album of albums">
         Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
-  </ul>
-  <div *ngIf="albumsWithoutDuration.length > 0">Albums without duration data</div>
-  <ul>
-      <li *ngFor ="let album of albumsWithoutDuration">
+    </ul>
+    <h5 *ngIf="playtimeTotalMsec || timeAvailableMsec" class="footer">
+      Footer: Total play time: {{formattedPlaytimeTotal}}. Total available time {{formattedTimeAvailable}}
+    </h5>
+  </div>
+
+  <div *ngIf="albumsBeyondPlayTime.length > 0" id="albumsBeyond" class="album-section">
+    <h2>Albums you can play after sunset</h2>
+    <ul>
+      <li *ngFor="let album of albumsBeyondPlayTime">
         Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
       </li>
-  </ul>
-  <select id="cities" [(ngModel)]="selectedCityObject">
-      <option *ngFor="let cityObject of cityObjects" [ngValue]="cityObject">
-       {{cityObject.id}}:{{cityObject.name}}
-      </option>
-    </select>
-    <div>
-      <span>Selected in dropdown City Object name: </span>{{selectedCityObject.name}}
-    </div>
+    </ul>
+  </div>
+
+  <div *ngIf="albumsWithoutDuration.length > 0" id="albumsWithout" class="album-section">
+    <h2>Albums without duration data</h2>
+    <ul>
+      <li *ngFor="let album of albumsWithoutDuration">
+        Title: {{album.title}}, duration: {{getAlbumDurationInMinutesAsStringTwoDecimals(album)}} minutes, {{album.trackCount}} tracks
+      </li>
+    </ul>
+  </div>
+
+  <!-- <select id="cityObjects" [(ngModel)]="selectedCityObject">
+    <option *ngFor="let cityObject of cityObjects" [ngValue]="cityObject">
+      {{cityObject.id}}:{{cityObject.name}}
+    </option>
+  </select>
+  <div>
+    <span>Selected in dropdown City Object name: </span>{{selectedCityObject.name}}
+  </div>
   <ul>
     <li *ngFor="let cityObject of cityObjects" (click)="onSelect(cityObject)">
       {{cityObject.id}}:{{cityObject.name}}
@@ -63,5 +74,5 @@
 </div>
 <div>
   <span>Selected City Object name: </span>{{selectedCityObject.name}}
-</div>
-<!-- </form> -->
+</div> -->
+  <!-- </form> -->
