@@ -32,19 +32,12 @@ export class AlbumListComponent implements OnInit {
   constructor(public albumRestApi:AlbumRestApiService) {
     this.selectedCity = this.selectACity;
     this.previouslySelectedCity = this.selectedCity;
-    //Experiments
-    // this.selectedCityObject = {id:-1, name:""};
   }
 
-  //private readonly timeOptions = {hour: "2-digit", minute: "2-digit"};
-
   get formattedSunRiseTime():string {
-    //'en-US' is not good for Tokyo, Sydney - tested
-    //return this.sunRise ? this.sunRise.toLocaleTimeString('en-US', this.timeOptions):'';
     return this.sunRiseString ? this.sunRiseString.substr(11, 5) : null;
   }
   get formattedSunSetTime():string {
-    //return this.sunSet ?  this.sunSet.toLocaleTimeString('en-US', this.timeOptions):'' ;
     return this.sunSetString ? this.sunSetString.substr(11, 5) : null;
   }
 
@@ -193,18 +186,4 @@ export class AlbumListComponent implements OnInit {
     }
     return trackDiff;
   }
-
-  //Experiments
-  // selectedCityObject:{id:number, name:string};
-  // readonly cityObjects: {id:number, name:string}[]  = [
-  //   {id:-1, name: "Select City"},
-  //   {id:0, name: "Toronto"},
-  //   {id:1, name: "Tokyo"},
-  //   {id:2, name: "London"},
-  //   {id:3, name: "Sydney"}
-  // ];
-
-  // onSelect(city){
-  //   this.selectedCityObject = city;
-  // }
 }
