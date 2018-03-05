@@ -32,14 +32,14 @@ export class AlbumListComponent implements OnInit {
   constructor(public albumRestApi:AlbumRestApiService) {
     this.selectedCity = this.selectACity;
     this.previouslySelectedCity = this.selectedCity;
-    //test code
-    this.selectedCityObject = {id:-1, name:""};
+    //Experiments
+    // this.selectedCityObject = {id:-1, name:""};
   }
 
   //private readonly timeOptions = {hour: "2-digit", minute: "2-digit"};
 
   get formattedSunRiseTime():string {
-    //'en-US' is not good for Tokyo, Sydney - testedd
+    //'en-US' is not good for Tokyo, Sydney - tested
     //return this.sunRise ? this.sunRise.toLocaleTimeString('en-US', this.timeOptions):'';
     return this.sunRiseString ? this.sunRiseString.substr(11, 5) : null;
   }
@@ -80,7 +80,6 @@ export class AlbumListComponent implements OnInit {
   }
 
   onClickButton(){
-    //alert("button clicked");
     let that = this;
     this.albumRestApi.getAlbums().subscribe({
       next:(albums)=>{
@@ -182,21 +181,30 @@ export class AlbumListComponent implements OnInit {
     });
   }
 
-  private compareAlbums(album1:IAlbum, album2:IAlbum):number{
-    return album2.trackCount - album1.trackCount;
+  /**
+   * album1.trackCount > album2.trackCount => album1 preceeds,
+   * Same trackCount: album1.duration < album2.duration => album1 preceeds
+   * Optimization criteria: max trackCounts within given playtime
+   */
+  private compareAlbums(album1:Album, album2:Album):number{
+    let trackDiff = album2.trackCount - album1.trackCount;
+    if(trackDiff === 0 ){
+      return album1.durationMsec - album2.durationMsec;
+    }
+    return trackDiff;
   }
 
-  //test code
-  selectedCityObject:{id:number, name:string};
-  readonly cityObjects: {id:number, name:string}[]  = [
-    {id:-1, name: "Select City"},
-    {id:0, name: "Toronto"},
-    {id:1, name: "Tokyo"},
-    {id:2, name: "London"},
-    {id:3, name: "Sydney"}
-  ];
+  //Experiments
+  // selectedCityObject:{id:number, name:string};
+  // readonly cityObjects: {id:number, name:string}[]  = [
+  //   {id:-1, name: "Select City"},
+  //   {id:0, name: "Toronto"},
+  //   {id:1, name: "Tokyo"},
+  //   {id:2, name: "London"},
+  //   {id:3, name: "Sydney"}
+  // ];
 
-  onSelect(city){
-    this.selectedCityObject = city;
-  }
+  // onSelect(city){
+  //   this.selectedCityObject = city;
+  // }
 }
