@@ -4,13 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to play:
 1. In your chrome browser add and enable plugin https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog
-Ensure "Access-Control-Allow-Origin: *" header is configured.
+Ensure "Access-Control-Allow-Origin: *" header is configured. The plugin calls it
+Access-Control-Expose-Headers. Set it to *.
 2. Clone the repo.
-3. Open in Visual Studio Code - VS Code
-4. In the VS Code terminal run "npm install", then "ng serve" to run the development server.
-5. In Chrome browser navigate to http://localhost:4200
-6. In the top drop down, select City.
-7. Click the button to display list of albums.
+3. Install nodejs on you machine.
+    NOTE: I tested with nodejs version 8.9.1. and 8.9.4.
+4. Open folder Metrolinx in Visual Studio Code - VS Code.
+5. In the VS Code terminal run "npm install", then "ng serve" to run the development server.
+6. In Chrome browser navigate to http://localhost:4200
+7. In the top drop down, select City.
+8. Click the button "Fetch Queen albums" to display list of albums.
 
 ## Development server
 
