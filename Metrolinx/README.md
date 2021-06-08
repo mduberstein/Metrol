@@ -1,17 +1,16 @@
 # Metrolinx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
 ## How to play:
-1. In your chrome browser add and enable plugin 
-https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog
-NEW PLUGIN
+1. To allow CORS for testing the project
+In your chrome browser add and enable plugin "CORS Unblock"
 https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
-Ensure "Access-Control-Allow-Origin: *" header is configured. The plugin calls it
-Access-Control-Expose-Headers. Set it to *.
+The video explaining how to use the plugin is in
+https://www.youtube.com/watch?v=8berLeTjKDM
 2. Clone the repo.
 3. Install nodejs on you machine.
-    NOTE: I tested with nodejs version 8.9.1. and 8.9.4.
+NOTE: I tested with nodejs versions 16.3.0, 8.9.1, 8.9.4.
 4. Open folder Metrolinx in Visual Studio Code - VS Code.
 5. In the VS Code terminal run "npm install", then "ng serve" to run the development server.
 6. In Chrome browser navigate to http://localhost:4200
